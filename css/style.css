@@ -136,11 +136,13 @@ header .buttons span{
     padding: 10px 20px;
     margin-top: 48px;
     font-weight: 100;
+    cursor: pointer;
 }
 .wrapper button:hover{
     background-color: #152242;
     color: #fff;
 }
+/*
 #image-1:hover{
     content: url("../img/pic02.jpg");
 }
@@ -149,7 +151,7 @@ header .buttons span{
 }
 #image-3:hover{
     content: url("../img/pic01.jpg");
-}
+}*/
 
 /* attached-img starts */
 .attached-img .row .col-sm-4 .attachedimage{
@@ -267,6 +269,10 @@ header .buttons span{
 }
 .multi-section .left button{
     margin-top: 18px;
+}
+.multi-section .left button:hover{
+    background-color: #152242;
+    color: #fff;
 }
 
 
