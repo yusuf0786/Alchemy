@@ -34,10 +34,10 @@ header nav ul{
 header nav ul li{
     list-style-type: none;
     font-size: 20px;
+    margin-right: 25px;
 }
 header nav ul li a{
     text-decoration: none;
-    margin-right: 25px;
 }
 header nav ul li a:hover{
     text-decoration: none;
@@ -426,11 +426,11 @@ footer a:hover{
 
 
 /* media query */
-@media only screen and (max-width:1024px){
+@media only screen and (max-width:1025px){
     header nav ul{
         padding-left: 15px;
     }
-    header nav ul li a{
+    header nav ul li {
         margin-right: 15px;
     }
 
@@ -449,7 +449,7 @@ footer a:hover{
 
 }
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:769px){
 
     /* header */
     header{
@@ -479,8 +479,13 @@ footer a:hover{
         width: 100%;
         padding-top: 18px;
     }
-    header nav ul li a{
+    header nav ul {
+        padding-left: 53px;
+    }
+    header nav ul li{
         margin-right: 28px;
+    }
+    header nav ul li a{
         color: #fff !important;
     }
 
@@ -550,7 +555,7 @@ footer a:hover{
     }
 }
 
-@media only screen and (max-width:425px){
+@media only screen and (max-width:426px){
 
     header nav{
         position: fixed;
@@ -567,16 +572,22 @@ footer a:hover{
         justify-content: center;
         padding: 0 15px;
     }
+    header nav ul li {
+        margin-right: 0;
+    }
     header nav ul li a{
         display: block;
         background-color: cyan;
         color: #000 !important;
         border-radius: 4px;
         margin: 0;
-        margin-top: 28px;
+        margin-top: 35px;
         padding: 10px 13px;
     }
 
+    .banner {
+        top: 0;
+    }
     .carousel .carousel-inner .carousel-item .carousel-caption{
         top: 100px;
     }
@@ -596,7 +607,7 @@ footer a:hover{
 @media (max-width:372px) {
 
     .two-section .container .section-text h3 {
-
         font-size: 20px;
     }
+    
 }
