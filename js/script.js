@@ -1,24 +1,19 @@
 
-    $("header").hover(function(){
-      $("header .buttons a, header h2, header nav ul li a").css("color", "black");
-    },
-    function(){
-        $("header .buttons a, header h2, header nav ul li a").css("color","white");
-        }
-    );
+    // $("header").hover(function(){
+    //   $("header .buttons a, header h2, header nav ul li a").css("color", "black");
+    // },
+    // function(){
+    //     $("header .buttons a, header h2, header nav ul li a").css("color","white");
+    //     }
+    // );
 
-    $("header").hover(function(){
-
-        $("header h2").animate({
-            fontSize:"38px"
-        },0100);
-    },
-    function(){
-        $("header h2").animate({
-            fontSize:"32px"
-        },0100);
-    }
-    );
+    // $("header").hover(function(){
+    //     $("header h2").animate({ fontSize:"38px" },0100);
+    // },
+    // function(){
+    //     $("header h2").animate({ fontSize:"32px" },0100);
+    // }
+    // );
 
 
     $("#usd-btn").click(function(){
@@ -29,7 +24,7 @@
     // nav toggle
     $(".nav-open").click(function(){
 
-        $("header nav").fadeIn(0500);
+        $("header nav").fadeIn(0.5);
         $(".nav-open").css('transform','rotate(90deg)');
         $(".nav-open").animate({
             opacity:'0'
