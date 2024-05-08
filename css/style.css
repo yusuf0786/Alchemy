@@ -35,16 +35,22 @@ a {
 
 header{
     width: 100%;
-    position: relative;
+    position: sticky;
+    top: 0;
     z-index: 99999;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem 0;
-    background-color: rgba(129, 100, 100, 0.65);
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
 }
 header:hover {
-    background-color: rgba(129, 100, 100, 1);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+header.page-scrolled {
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.9);
 }
 
 header nav ul li a, header h2, header .buttons a{
@@ -488,7 +494,7 @@ footer a:hover{
 
     /* header */
     header{
-        background-color: #152242;
+        background-color: rgba(0, 0, 0, 0.9);
     }
     header .nav-open, header nav .nav-close{
         display: block !important;
@@ -506,7 +512,7 @@ footer a:hover{
     }
     header nav{
         position: absolute;
-        background-color: #152242;
+        background-color: rgba(0, 0, 0, 1);
         display: none;
         width: 100%;
     }
@@ -602,7 +608,7 @@ footer a:hover{
     }
     header nav ul li a{
         display: block;
-        background-color: cyan;
+        background-color: #fff;
         color: #000 !important;
         border-radius: 4px;
         margin: 0;

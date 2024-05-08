@@ -53,3 +53,12 @@
             alert('Congratulations your email is registered');
         }
     }
+
+
+window.addEventListener("scroll", function() {
+    if (this.scrollY > 1) {
+        $("header").addClass("page-scrolled");
+    } else {
+        $("header").removeClass("page-scrolled");
+    }
+})
